@@ -1,0 +1,13 @@
+def ascen_descen(array):
+    ascending = sorted(array)  # ascending order
+    descending = sorted(array, reverse=True)  # descending order
+    print(f'ascending order of the array is:{ascending}')
+    print(f'ascending order of the array is:{descending}')
+    return
+
+n=int(input('enter the number of elements in the array:'))
+arr=[]
+for i in range(n):
+    num=int(input(f'enter the {i+1} element:'))
+    arr.append(num)
+ascen_descen(arr)
